@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Semester - NCET Attendance Portal</title>
+    <link rel="icon" href="{% static 'FacultyView/ncet-logo.svg' %}" type="image/svg-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+      }
+      
+      header {
+        background-color: #0056b3;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      header h1 {
+        font-size: 36px;
+      }
+      h2{
+        text-align:center;
+      }
+      
+      main {
+        display: flex;
+        gap: 2em;
+        justify-content: space-around;
+        align-items: center;
+        height: 50vh;
+      }
+      
+      footer {
+        background-color: #0056b3;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+      
+      .semester-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        outline:none;
+        text-decoration: none;
+        justify-content:center;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 2px 40px; /* Fixed shorthand margin */
+        transition: transform 0.3s ease; /* Fixed spelling: "transition" */
+      }
+      
+      /* Apply hover effect directly to the button */
+      .semester-button:hover {
+        transform: scale(1.2); /* Fixed selector */
+      }
+      
+      @media (max-width: 500px) {
+        main {
+          flex-direction: column;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <section>
+      <div style="text-align:center">
+        <img class="ncet-logo" src="{% static 'FacultyView/ncet-logo.svg' %}" alt="logo" width=200 />
+      </div>
+    </section>
+    <header>
+      <h1>Canara Engineering College</h1>
+      <h4>
+        (An Autonomous College under VTU, Accredited by NAAC with “A” Grade) <br />
+            Sudhindra Nagara (V), Benajanapadavu (P), Bantwal (T), Dakshina Kannada-574219.
+      </h4>
+    </header>
+    <main>
+      <div style="text-align:center; margin-top: 30px; ">
+        <h2>Select Semester</h2>
+        <section style="display:flex; flex-direction:rows">
+        <div class="sem3">
+          <a href="{% url 'sem3' %}">
+            <button class="semester-button">3rd Semester</button>
+          </a></div>
+          <div><a href="{% url 'sem5' %}">
+            <button class="semester-button">5th Semester</button>
+          </a></div>
+          <div><a href="{% url 'sem7' %}">
+            <button class="semester-button">7th Semester</button>
+          </a></div>
+        </section>
+          <!-- Add more buttons for other semesters as needed -->
+      </div>
+    </main>
+    <footer style="text-align:center; margin-top: 30px;">
+      <p>&copy; QR Attendance System.</p>
+    </footer>
+  </body>
+</html>

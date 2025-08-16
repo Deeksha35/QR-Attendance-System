@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCET Attendance Portal</title>
+    <link rel="icon" href="{% static 'StudentView/ncet.svg' %}" type="image/svg-icon">
+    <link rel="stylesheet" href="{% static 'StudentView/submitted.css' %}" />
+  </head>
+  <body>
+    <section>
+      <div style="text-align:center">
+        <img class="ncet-logo" src="{% static 'StudentView/ncet.svg'%}" alt="logo" width=200 >
+      </div>
+    </section>
+    <header class="header">
+      <h1 class="header-title">CANARA ENGINEERING COLLEGE</h1>
+      <h4>(AN Autonomous College under VTU, Accredited by NAAC with “A” Grade) <br>
+        Sudhindra Nagara (V), Benjanapadavu (P), Bantwal (T), Mangaluru-574219. 
+      </h4>
+    </header>
+
+    <div class="container">
+      <h2>Attendance submitted successfully.</h2>
+      <br />
+      <h2>You may close this page.</h2>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; QR Attendance System.</p>
+    </footer>
+  </body>
+</html>

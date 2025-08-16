@@ -1,0 +1,150 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCET Attendance Portal</title>
+    <link rel="icon" href="{% static 'FacultyView/ncet-logo.svg'%}" type="image/svg-icon">
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Button container with flexbox */
+section.button-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows buttons to wrap to the next line on small screens */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 20px; /* Creates space between buttons */
+  margin-top: 20px; /* Adds some top margin */
+  padding: 0 20px; 
+  margin-bottom: 20px;/* Prevents buttons from touching the edges */
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none; /* Removes underline */
+  transition: transform 0.3s ease; /* Smooth transition on transform */
+  outline: none; /* Remove outline on focus */
+  min-width: 200px; /* Optional: makes buttons consistent in width */
+  text-align: center;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  transform: scale(1.1); /* Increases button size by 10% */
+}
+
+/* Footer style */
+footer {
+  background-color: #0056b3;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+ {% comment %}<link rel="stylesheet" href="{% static 'FacultyView/FVmain.css' %}"/>{% endcomment %}
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section style="text-align:center;">
+      <img class="ncet-logo" src="{% static 'FacultyView/ncet-logo.svg'%}" alt="logo" width="200">
+    </section>
+    
+    <header>
+      <h1>Canara Engineering Collegey</h1>
+      <h4>
+        (An Autonomous College under VTU, Accredited by NAAC with “A” Grade) <br>
+        Sudhindra Nagara (V), Benjanapadavu (P), Bantwal (T), Dakshina Kannada-574219
+      </h4>
+    </header>
+    
+    <h2 style="text-align:center;">-- Attendance Portal --</h2>
+    
+    <h3>List of Courses</h3>
+    
+    <section class="button-container">
+      <a href="{% url 'faculty_view' %}">
+        <button>22CST51(Operating Systems)</button>
+      </a>
+      <a href="{% url 'faculty_view' %}">
+        <button>22CST52(Computer Networks)</button>
+      </a>
+      <a href="{% url 'faculty_view' %}">
+        <button>22CST53(Theory of Computation)</button>
+      </a>
+      <a href="{% url 'faculty_view' %}">
+        <button>22CST542(Artificial Intelligence)</button>
+      </a>
+      <a href="{% url 'faculty_view' %}">
+        <button>22CSL55(Web Technology Lab)</button>
+      </a>
+      <a href="{% url 'faculty_view' %}">
+        <button>22CSL56(Data Science with Python)</button>
+      </a>
+      <a href="{% url 'faculty_view' %}">
+        <button>22CSP57(Mini Project)</button>
+      </a>
+      <a href="{% url 'faculty_view' %}">
+        <button>22RMP57(Research Methodologies & IPR)</button>
+      </a>
+      <a href="{% url 'faculty_view' %}">
+        <button>22CIV58(Environmental Studies)</button>
+      </a>
+    </section>
+    
+    <footer>
+      <p>&copy; QR Attendance System.</p>
+    </footer>
+  </body>
+</html>
