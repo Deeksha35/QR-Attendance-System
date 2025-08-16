@@ -1,9 +1,8 @@
 <div align="center">
 
-# QR Attendance System
+# QR Attendance System — Canara Engineering College
 
 ![image](https://github.com/user-attachments/assets/b6bc3654-4d11-4785-a22e-17a1da76d9db)
-<img width="1366" height="768" alt="Screenshot 2025-08-16 145748" src="https://github.com/user-attachments/assets/b6bc3654-4d11-4785-a22e-17a1da76d9db" />
 
 </div>
 
@@ -141,16 +140,20 @@ Before you begin, ensure you have the following prerequisites installed:
 
 ### Admin Page
 ![image](https://github.com/user-attachments/assets/7bc115e0-318c-4674-b18f-f41fdefd304d)
-<img width="1366" height="768" alt="Screenshot 2025-08-16 145848" src="https://github.com/user-attachments/assets/7bc115e0-318c-4674-b18f-f41fdefd304d" />
+
 
 ### Student Page
 ![image](https://github.com/user-attachments/assets/fc7995a3-557d-441c-b919-0396e1ab3e83)
 
 ### Submission Successful Page
 ![image](https://github.com/user-attachments/assets/9399760e-0656-4291-8fad-e0abe390af10)
-<img width="1366" height="768" alt="Screenshot 2025-08-16 145814" src="https://github.com/user-attachments/assets/fc7995a3-557d-441c-b919-0396e1ab3e83" />
 
-<img width="1366" height="768" alt="Screenshot 2025-08-16 145830" src="https://github.com/user-attachments/assets/9399760e-0656-4291-8fad-e0abe390af10" />
+## Developer
+- **Deeksha Shankar Naik**  
+  - 🎓 Canara Engineering College  
+  - 📧 snaikdeeksha2@gmail.com 
+  - 🌐 [GitHub](https://github.com/Deeksha35)
+  - 🔗 [LinkedIn](https://www.linkedin.com/in/deeksha-s-naik-553a30339/)  
 
 ## Contributions
 
