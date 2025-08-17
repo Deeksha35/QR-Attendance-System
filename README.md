@@ -20,7 +20,7 @@
 
 ## Overview
 
-The QR Code Attendance System is an efficient,fast and user-friendly tool for tracking attendance using QR codes. It utilizes HTML, CSS, and Django to create a web-based interface for marking attendance. This system is designed to work seamlessly when devices are connected to the __Same College Local Network__.
+The QR Code Attendance System is an efficient,fast and user-friendly tool for tracking attendance using QR codes. It utilizes HTML, CSS, and Django to create a web-based interface for marking attendance. This system is designed to work seamlessly when devices are connected to the __Same Local Network__.
 
 The teacher/faculty can display the QR Code using classroom projector so that present students can scan and mark their attendance.
 
@@ -147,6 +147,14 @@ Before you begin, ensure you have the following prerequisites installed:
 
 ### Submission Successful Page
 ![image](https://github.com/user-attachments/assets/9399760e-0656-4291-8fad-e0abe390af10)
+
+## License
+This project is licensed under the MIT License.  
+
+Note: This is an independent personal project developed and maintained by Deeksha Shankar Naik.  
+It is not part of any coursework, academic submission, or affiliated with Canara Engineering College.  
+
+
 
 ## Developer
 - **Deeksha Shankar Naik**  
