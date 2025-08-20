@@ -1,8 +1,8 @@
-qrcode
-django
-Flask
-pillow
-gunicorn
 Django
 gunicorn
 psycopg2-binary
+dj-database-url
+python-decouple
+whitenoise
+qrcode
+pillow
