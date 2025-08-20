@@ -1,2 +1,8 @@
 qrcode
 django
+Flask
+pillow
+gunicorn
+Django
+gunicorn
+psycopg2-binary
