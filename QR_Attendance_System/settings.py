@@ -1,15 +1,13 @@
 import os
-import dj_database_url
-from decouple import config
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("SECRET_KEY", default="django-insecure-xyz")
+SECRET_KEY = "django-insecure-xyz"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", default=True, cast=bool)
+DEBUG = True
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost", ".onrender.com"]
 
@@ -57,12 +55,13 @@ TEMPLATES = [
 WSGI_APPLICATION = "QR_Attendance_System.wsgi.application"
 
 # ----------------------------
-# DATABASE
+# DATABASE (SQLite only)
 # ----------------------------
 DATABASES = {
-    "default": dj_database_url.config(
-        default=config("DATABASE_URL", default=f"sqlite:///{BASE_DIR/'db.sqlite3'}")
-    )
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
 }
 
 # ----------------------------
